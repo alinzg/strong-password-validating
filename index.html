@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c32486dc72.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Validation</title>
+  </head>
+  <body>
+    <main>
+      <div class="form-section">
+        <form id="form">
+          <div>
+            <label for="username">Username :</label>
+            <input id="user" name="username" type="text" placeholder="your ID" />
+          </div>
+          <div class="password-area">
+            <label for="password">Password :</label>
+            <input id="pass" name="password" type="password" placeholder="your key" />
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <div class="checklist-section">
+        <h2>your password must have :</h2>
+        <ul>
+          <li id="length">
+            <span><i class="fa-solid fa-xmark"></i></span> at least 8 characters
+          </li>
+          <li id="lower-case">
+            <span><i class="fa-solid fa-xmark"></i></span> lower case
+          </li>
+          <li id="upper-case">
+            <span><i class="fa-solid fa-xmark"></i></span> upper case
+          </li>
+          <li id="digits">
+            <span><i class="fa-solid fa-xmark"></i></span> number
+          </li>
+          <li id="special-characters">
+            <span><i class="fa-solid fa-xmark"></i></span> one of these characters : @ % # $
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
