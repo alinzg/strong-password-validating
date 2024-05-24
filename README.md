@@ -53,4 +53,4 @@ form.onsubmit = (e) => {
 
 ## &nbsp;
 
-That's it another things are just about styling and details.
+That's it other things are just about styling and details.
