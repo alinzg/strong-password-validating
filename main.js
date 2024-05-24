@@ -35,10 +35,10 @@ eye.onclick = function () {
   }
 };
 
-let patternUpper = /[A-Z]/g;
-let patternLower = /[a-z]/g;
-let patternDigits = /[\d]/g;
-let patternSpecial = /[@%#$]/g;
+const patternUpper = /[A-Z]/g;
+const patternLower = /[a-z]/g;
+const patternDigits = /[\d]/g;
+const patternSpecial = /[@%#$]/g;
 
 form.onsubmit = (e) => {
   e.preventDefault();
